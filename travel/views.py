@@ -1,0 +1,7 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+
+
+def home(request):
+    name = 'Alexandr'
+    return render(request, 'home.html', {'name': name})
