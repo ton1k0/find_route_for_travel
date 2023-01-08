@@ -13,5 +13,6 @@ class City(models.Model):
         verbose_name_plural = 'Города'
         ordering = ['name']
 
+
     def get_absolute_url(self):
         return reverse('cities:detail', kwargs={'pk': self.pk})
