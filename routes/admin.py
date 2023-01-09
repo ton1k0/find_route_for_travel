@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from .models import Route
+from routes.models import Route
 
 admin.site.register(Route)

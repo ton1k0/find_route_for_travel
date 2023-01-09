@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
-{% block title %}Город{% endblock %}
+{% block title %}Поезд{% endblock %}
+
 {% block content %}
-<h1>Город</h1>
+<h1>Поезд</h1>
 <div class="row">
     <div class="col-md">
         <table class="table table-striped">
@@ -10,14 +11,19 @@
                 <th>Откуда</th>
                 <th>Куда</th>
                 <th>Время в пути</th>
+
             </tr>
             <tr>
-                <td>{{object.name}}</td>
+                <td> {{object.name}} </td>
                 <td>{{object.from_city}}</td>
                 <td>{{object.to_city}}</td>
                 <td>{{object.travel_time}}</td>
+
+
             </tr>
+
         </table>
+
     </div>
 </div>
 <div class="row">
